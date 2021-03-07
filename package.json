@@ -28,18 +28,18 @@
   "main": "./out/src/extension",
   "contributes": {
     "customEditors": [{
-      "viewType": "pdf.preview",
-      "displayName": "Pdf Preview",
-      "selector": [{
-        "filenamePattern": "*.pdf"
-      }]
-    }],
+        "viewType": "pdf.preview",
+        "displayName": "Pdf Preview",
+        "selector": [{
+            "filenamePattern": "*.pdf"
+          }]
+      }],
     "configuration": {
       "type": "object",
       "title": "PDF Preview",
       "properties": {
         "pdf-preview.default.cursor": {
-          "markdownDescription": "The default cursol tool for preview.",
+          "markdownDescription": "The default cursor tool for preview.",
           "type": "string",
           "default": "select",
           "enum": [
@@ -53,7 +53,7 @@
           "pattern": "^(\\d+(?:\\.\\d+)?|auto|page-actual|page-fit|page-width)$"
         },
         "pdf-preview.default.sidebar": {
-          "markdownDescription": "Show the sidebar on load. The default visiblity of sidebar for preview.",
+          "markdownDescription": "Show the sidebar on load. The default visibility of sidebar for preview.",
           "type": "boolean",
           "default": false
         },
