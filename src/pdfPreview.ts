@@ -104,6 +104,7 @@ export class PdfPreview extends Disposable {
     };
 
     const config = vscode.workspace.getConfiguration('pdf-preview');
+    const invertValue = config.get('default.invertValue') as number
     const settings = {
       path: docPath.toString(),
       defaults: {
@@ -139,6 +140,7 @@ export class PdfPreview extends Disposable {
 <script src="${resolveAsUri('lib', 'build', 'pdf.worker.js')}"></script>
 <script src="${resolveAsUri('lib', 'web', 'viewer.js')}"></script>
 <script src="${resolveAsUri('lib', 'main.js')}"></script>
+<style>.page, .thumbnailImage { filter: invert(${invertValue}%); }</style>
 </head>`;
 
     const body = `<body tabindex="1" class="loadingInProgress">
