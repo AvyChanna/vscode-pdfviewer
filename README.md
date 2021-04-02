@@ -1,4 +1,8 @@
-# pdf
+# vscode-pdf
+
+> This is a fork of (vscode-pdf by tomoki1207) to add dark mode(color inversion). The original README is as follows.
+
+---
 
 Display pdf in VSCode.
 
