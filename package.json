@@ -107,9 +107,9 @@
     "package": "vsce package"
   },
   "dependencies": {
-    "@types/vscode": "^1.46.0"
   },
   "devDependencies": {
+    "@types/vscode": "^1.46.0",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.12.21",
     "@typescript-eslint/eslint-plugin": "^2.28.0",
